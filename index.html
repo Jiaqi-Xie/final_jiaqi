@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけん統計ゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>じゃんけん統計ゲーム</h1>
+        <p>あなたの手を選んでください！</p>
+
+        <div class="choices">
+            <button id="rock" class="btn">✊ グー</button>
+            <button id="scissors" class="btn">✌️ チョキ</button>
+            <button id="paper" class="btn">✋ パー</button>
+        </div>
+
+        <div id="result-area">
+            <p><strong>あなたの手:</strong> <span id="player-choice">---</span></p>
+            <p><strong>コンピュータの手:</strong> <span id="computer-choice">---</span></p>
+            <h2 id="result-message">さあ、勝負！</h2>
+        </div>
+
+        <div class="chart-container">
+            <h3>対戦成績</h3>
+            <canvas id="statsChart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
